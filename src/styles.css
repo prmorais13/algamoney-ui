@@ -8,3 +8,20 @@ body {
 label {
   font-weight: bold;
 }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+.col-valor {
+  width: 80px;
+  text-align: right;
+}
+
+.col-data {
+  width: 120px;
+  text-align: center;
+}
