@@ -12,6 +12,6 @@ export class AppComponent {
     { tipo: 'DESPESA', descricao: 'Compra frutas', dataVencimento: '30/05/2018', dataPagamento: null,
       valor: 12.30, pessoa: 'Atacadão das frutas' },
     { tipo: 'RECEITA', descricao: 'Salário PMN', dataVencimento: '30/05/2018', dataPagamento: '30/05/2018',
-      valor: 4.700, pessoa: 'Prefeitura de Nataç' }
+      valor: 4700, pessoa: 'Prefeitura de Natal' }
   ];
 }
