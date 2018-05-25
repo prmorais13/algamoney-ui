@@ -6,16 +6,22 @@ import { AppComponent } from './app.component';
 import {InputTextModule} from 'primeng/inputtext';
 import {ButtonModule} from 'primeng/button';
 import {TableModule} from 'primeng/table';
+import {TooltipModule} from 'primeng/tooltip';
+import { LancamentosPequisaComponent } from './lancamentos-pequisa/lancamentos-pequisa.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LancamentosPequisaComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     InputTextModule,
     ButtonModule,
-    TableModule
+    TableModule,
+    TooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
