@@ -20,6 +20,8 @@ import {DropdownModule} from 'primeng/dropdown';
 import {InputMaskModule} from 'primeng/inputmask';
 
 import {CurrencyMaskModule} from 'ng2-currency-mask';
+import { LancamentoGridComponent } from './lancamento-grid/lancamento-grid.component';
+import { PessoaGridComponent } from './pessoa-grid/pessoa-grid.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import {CurrencyMaskModule} from 'ng2-currency-mask';
     NavbarComponent,
     PessoasPesquisaComponent,
     LancamentoCadastroComponent,
-    PessoaCadastroComponent
+    PessoaCadastroComponent,
+    LancamentoGridComponent,
+    PessoaGridComponent
   ],
   imports: [
     BrowserModule,
