@@ -1,0 +1,31 @@
+<div class="ui-g">
+  <div class="ui-g-12">
+    <p-table [value]="lancamentos" [responsive]="true" [paginator]="true" [rows]="4">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Pessoa</th>
+          <th>Descrição</th>
+          <th width="120px">Vencimento</th>
+          <th width="120px">Pagamento</th>
+          <th width="80px">Valor</th>
+          <th width="90px">Opções</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-lancamento>
+        <tr>
+          <td>{{ lancamento.pessoa }}</td>
+          <td>{{ lancamento.descricao }}</td>
+          <td>{{ lancamento.dataVencimento }}</td>
+          <td class="col-data">{{ lancamento.dataPagamento }}</td>
+          <td class="col-valor" [style.color]="lancamento.tipo === 'DESPESA' ? 'red' : 'blue'">{{ lancamento.valor | number: '1.2-2' }}</td>
+          <td class="col-valor">
+            <a pButton icon="fa-pencil" pTooltip="Editar" tooltipPosition="top"
+               style="margin-right: 5px;"></a>
+            <p-button icon="fa fa-trash" styleClass="ui-button-danger" pTooltip="Excluir"
+                      tooltipPosition="top"></p-button>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</div>
