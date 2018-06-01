@@ -1,52 +1,24 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-import { AppComponent } from './app.component';
-import { LancamentosPequisaComponent } from './lancamentos-pequisa/lancamentos-pequisa.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.component';
-import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
-import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
+import {AppComponent} from './app.component';
 
-import {InputTextModule} from 'primeng/inputtext';
-import {ButtonModule} from 'primeng/button';
-import {TableModule} from 'primeng/table';
-import {TooltipModule} from 'primeng/tooltip';
-import {InputTextareaModule} from 'primeng/inputtextarea';
-import {CalendarModule} from 'primeng/calendar';
-import {SelectButtonModule} from 'primeng/selectbutton';
-import {DropdownModule} from 'primeng/dropdown';
-import {InputMaskModule} from 'primeng/inputmask';
-
-import {CurrencyMaskModule} from 'ng2-currency-mask';
-import { LancamentoGridComponent } from './lancamento-grid/lancamento-grid.component';
-import { PessoaGridComponent } from './pessoa-grid/pessoa-grid.component';
+import {LancamentosModule} from './lancamentos/lancamentos.module';
+import {PessoasModule} from './pessoas/pessoas.module';
+import {CoreModule} from './core/core.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LancamentosPequisaComponent,
-    NavbarComponent,
-    PessoasPesquisaComponent,
-    LancamentoCadastroComponent,
-    PessoaCadastroComponent,
-    LancamentoGridComponent,
-    PessoaGridComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    InputTextModule,
-    ButtonModule,
-    TableModule,
-    TooltipModule,
-    InputTextareaModule,
-    CalendarModule,
-    SelectButtonModule,
-    DropdownModule,
-    InputMaskModule,
-    CurrencyMaskModule
+
+    LancamentosModule,
+    PessoasModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
